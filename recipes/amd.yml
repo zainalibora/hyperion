@@ -35,7 +35,6 @@ modules:
       - libvirt
       - cage
       - sunshine
-      - fedora-release-kinoite
 
 
   - type: default-flatpaks
