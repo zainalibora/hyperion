@@ -50,7 +50,6 @@ modules:
         - net.davidotek.pupgui2
         - com.github.Matoking.protontricks
         - org.gnome.Loupe
-        - org.kde.Kstyle.Adwaita
         - org.kde.filelight
         - org.kde.gwenview
         - org.kde.haruna
