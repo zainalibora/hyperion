@@ -40,8 +40,7 @@ modules:
       - waydroid
       - waydroid-selinux
       - qemu-tools
-      - Sunshine
-      - libvritd
+      - libvirt
       - cage
       - sunshine
       - fedora-release-kinoite
