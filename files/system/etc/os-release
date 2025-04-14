@@ -1,0 +1,11 @@
+NAME="Hyperion"
+RELEASE_TYPE=stable
+ID=hyperion
+ID_LIKE="fedora"
+VERSION_ID=41
+VERSION_CODENAME="Archaeopteryx"
+PLATFORM_ID="platform:f41"
+PRETTY_NAME="Hyperion (Bazzite) W/ COSMIC Desktop"
+ANSI_COLOR="0;38;2;60;110;180"
+LOGO=fedora-logo-icon
+DEFAULT_HOSTNAME="hyperion"

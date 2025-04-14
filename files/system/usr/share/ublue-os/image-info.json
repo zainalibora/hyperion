@@ -1,0 +1,9 @@
+{
+  "image-name": "hyperion",
+  "image-flavor": "main",
+  "image-vendor": "tj5miniop",
+  "image-ref": "ostree-image-signed:docker://ghcr.io/tj5miniop/hyperion",
+  "image-tag":"latest",
+  "base-image-name": "ublue-os/bazzite",
+  "fedora-version": "41"
+}

@@ -23,6 +23,7 @@ modules:
       - https://copr.fedorainfracloud.org/coprs/ryanabx/cosmic-epoch/repo/fedora-%OS_VERSION%/ryanabx-cosmic-epoch-fedora-%OS_VERSION%.repo
     install:
       - cosmic-desktop
+      - gnome-software
     remove:
       # example: removing firefox (in favor of the flatpak)
       # "firefox" is the main package, "firefox-langpacks" is a dependency
@@ -40,10 +41,10 @@ modules:
     system:
       # If no repo information is specified, Flathub will be used by default
       install:
-        - org.mozilla.firefox
-        - org.gnome.Loupe
+        - app.zen_browser.zen
       remove:
         - org.gnome.eog
+        - org.mozilla.firefox
     user: {} # Also add Flathub user repo, but no user packages
 
   - type: systemd
