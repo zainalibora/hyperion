@@ -1,5 +1,12 @@
 # hyperion &nbsp; [![bluebuild build badge](https://github.com/tj5miniop/hyperion/actions/workflows/build.yml/badge.svg)](https://github.com/tj5miniop/hyperion/actions/workflows/build.yml)
 
+# NOTE - THIS IMAGE SHOULDN'T BE USED (YET) AS A DAILY-DRIVING OPERATING SYSTEM, IT IS CURRENTLY IN A PROTOTYPING PHASE.
+
+## Hyperion - A Bazzite-based fedora atomic desktop using the COSMIC desktop and suite of applications along with some extra tweaks/apps. More details to come
+
+
+
+
 See the [BlueBuild docs](https://blue-build.org/how-to/setup/) for quick setup instructions for setting up your own repository based on this template.
 
 After setup, it is recommended you update this README to describe your custom image.
