@@ -6,7 +6,7 @@ name: hyperion
 description: Hyperion is an open-source project, that takes the Bazzite atomic image and uses the cosmic desktop environment
 
 # the base image to build on top of (FROM) and the version tag to use
-base-image: ghcr.io/tj5miniop/bazzite-desktopless
+base-image: ghcr.io/tj5miniop/ublue-rolling-images-bazzite-cosmic
 image-version: latest # latest is also supported if you want new updates ASAP
 
 # module configuration, executed in order
