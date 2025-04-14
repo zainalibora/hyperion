@@ -45,6 +45,20 @@ modules:
       remove:
         - org.gnome.eog
         - org.mozilla.firefox
+        - io.github.dvlv.boxbuddyrs
+        - de.leopoldluley.Clapgrep
+        - net.davidotek.pupgui2
+        - com.github.Matoking.protontricks
+        - org.gnome.Loupe
+        - org.kde.Kstyle.Adwaita
+        - org.kde.filelight
+        - org.kde.gwenview
+        - org.kde.haruna
+        - org.kde.kcalc
+        - org.kde.okular
+        - org.winehq.Wine.DLLs.dxvk
+        - org.winehq.Wine.gecko
+        - org.winehq.Wine.mono
     user: {} # Also add Flathub user repo, but no user packages
 
   - type: systemd
