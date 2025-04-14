@@ -33,8 +33,6 @@ modules:
       - plasma-workspace
       - plasma-nm
       - plasma-pa
-      - firefox
-      - firefox-langpacks
       - sddm
       - cockpit-bridge
       - cockpit-system
