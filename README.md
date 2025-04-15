@@ -2,9 +2,12 @@
 
 # NOTE - THIS IMAGE SHOULDN'T BE USED (YET) AS A DAILY-DRIVING OPERATING SYSTEM, IT IS CURRENTLY IN A PROTOTYPING PHASE.
 
-## Hyperion - A Bazzite-based fedora atomic desktop using the COSMIC desktop and suite of applications along with some extra tweaks/apps. More details to come
+## Hyperion - A fedora COSMIC-based atomic desktop, meant for gaming, including many tweaks from Bazzite/Nobara/CachyOS. More details to come
 
+## Why not use Bazzite? 
 
+Bazzite is a great atomic desktop which provides an awesome 'just-works' experience for gamers.
+I was originally basing Hyperion off of Bazzite, but I was getting many conflicts with packages, files, etc. I'm basing off of the official Fedora COSMIC ATOMIC spin, which should be released alongside Fedora 42.
 
 
 See the [BlueBuild docs](https://blue-build.org/how-to/setup/) for quick setup instructions for setting up your own repository based on this template.
