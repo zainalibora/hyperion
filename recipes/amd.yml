@@ -3,7 +3,7 @@
 # image will be published to ghcr.io/<user>/<name>
 name: hyperion
 # description will be included in the image's metadata
-description: Hyperion is an open-source project, that takes the Bazzite atomic image and uses the cosmic desktop environment
+description: Hyperion is an open-source project, that takes the Aurora project and spruces up the experience, specifically for PC Gamers. Hyperion tries to stay as lean as possible while providing everything you need.
 
 # the base image to build on top of (FROM) and the version tag to use
 base-image: ghcr.io/tj5miniop/ublue-rolling-images-bazzite-cosmic
@@ -20,20 +20,12 @@ modules:
   - type: rpm-ostree
     repos:
       - https://copr.fedorainfracloud.org/coprs/atim/starship/repo/fedora-%OS_VERSION%/atim-starship-fedora-%OS_VERSION%.repo
-      - https://copr.fedorainfracloud.org/coprs/ryanabx/cosmic-epoch/repo/fedora-%OS_VERSION%/ryanabx-cosmic-epoch-fedora-%OS_VERSION%.repo
+      - https://copr/fedorainfracloud.org/coprs/kylegospo/bazzite/fedora-%OS_VERSION%/kylegospo-bazzite-fedora-%OS_VERSION%.repo
     install:
-      - cosmic-desktop
-      - gnome-software
+
     remove:
       # example: removing firefox (in favor of the flatpak)
       # "firefox" is the main package, "firefox-langpacks" is a dependency
-      - qemu
-      - waydroid
-      - waydroid-selinux
-      - qemu-tools
-      - libvirt
-      - cage
-      - sunshine
 
 
   - type: default-flatpaks
@@ -42,29 +34,13 @@ modules:
       # If no repo information is specified, Flathub will be used by default
       install:
         - app.zen_browser.zen
-      remove:
-        - org.gnome.eog
-        - org.mozilla.firefox
-        - io.github.dvlv.boxbuddyrs
-        - de.leopoldluley.Clapgrep
-        - net.davidotek.pupgui2
-        - com.github.Matoking.protontricks
-        - org.gnome.Loupe
-        - org.kde.filelight
-        - org.kde.gwenview
-        - org.kde.haruna
-        - org.kde.kcalc
-        - org.kde.okular
-        - org.winehq.Wine.DLLs.dxvk
-        - org.winehq.Wine.gecko
-        - org.winehq.Wine.mono
+
     user: {} # Also add Flathub user repo, but no user packages
 
   - type: systemd
     system:
       enabled:
-        - cosmic-greeter
-      disabled:
         - sddm
+      disabled:
 
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
