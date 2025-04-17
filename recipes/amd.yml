@@ -39,6 +39,8 @@ modules:
         - com.vysp3r.ProtonPlus
         - page.kramo.Cartridges
         - com.github.tchx84.Flatseal
+      remove:
+        - org.mozilla.firefox
 
     user: {} # Also add Flathub user repo, but no user packages
 
