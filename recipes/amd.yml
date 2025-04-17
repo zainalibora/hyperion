@@ -6,7 +6,7 @@ name: hyperion
 description: Hyperion is an open-source project, that takes the Aurora project and spruces up the experience, specifically for PC Gamers. Hyperion tries to stay as lean as possible while providing everything you need.
 
 # the base image to build on top of (FROM) and the version tag to use
-base-image: ghcr.io/tj5miniop/ublue-rolling-images-bazzite-cosmic
+base-image: ghcr.io/tj5miniop/ublue-rolling-images-aurora-base
 image-version: latest # latest is also supported if you want new updates ASAP
 
 # module configuration, executed in order
@@ -22,10 +22,9 @@ modules:
       - https://copr.fedorainfracloud.org/coprs/atim/starship/repo/fedora-%OS_VERSION%/atim-starship-fedora-%OS_VERSION%.repo
       - https://copr/fedorainfracloud.org/coprs/kylegospo/bazzite/fedora-%OS_VERSION%/kylegospo-bazzite-fedora-%OS_VERSION%.repo
     install:
-
-    remove:
-      # example: removing firefox (in favor of the flatpak)
-      # "firefox" is the main package, "firefox-langpacks" is a dependency
+      - nano
+      - distrobox
+      - podman
 
 
   - type: default-flatpaks
@@ -34,6 +33,12 @@ modules:
       # If no repo information is specified, Flathub will be used by default
       install:
         - app.zen_browser.zen
+        - dev.vencord.Vesktop
+        - com.obsproject.Studio
+        - com.heroicgameslauncher.hgl
+        - com.vysp3r.ProtonPlus
+        - page.kramo.Cartridges
+        - com.github.tchx84.Flatseal
 
     user: {} # Also add Flathub user repo, but no user packages
 
